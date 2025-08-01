@@ -1,9 +1,11 @@
 package main
 
 import (
-	"mall/internal/db"
-	"mall/internal/redis"
-	"mall/internal/routes"
+	"github.com/adityjoshi/parkingSystem.git/internal/redis"
+
+	//"github.com/adityjoshi/parkingSystem.git/internal/routes"
+
+	"github.com/adityjoshi/parkingSystem.git/internal/db"
 
 	"github.com/gin-gonic/gin"
 )
@@ -13,7 +15,7 @@ func main() {
 	redis.Init()
 
 	r := gin.Default()
-	routes.SetupRoutes(r)
+	//routes.SetupRoutes(r)
 
 	r.Run(":8080")
 }

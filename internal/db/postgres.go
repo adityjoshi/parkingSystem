@@ -7,7 +7,7 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 
-	"mall/internal/models"
+	"github.com/adityjoshi/parkingSystem.git/internal/models"
 )
 
 var DB *gorm.DB
